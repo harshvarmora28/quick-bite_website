@@ -1,0 +1,100 @@
+<!-- Author: Harsh Varmora
+Purpose: Project of making a Responsive website of food delivery
+Date: 28 April,2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite-Order Now</title>
+    <link rel="shortcut icon" href="img/logoBQ.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="img/logoBQ.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#services-container">Services</a></li>
+            <li><a href="#client-section">Our Clients</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to QuickBite.com</h1>
+        <p>Bite as Quick as you can because your next meal is ready at your doorstep.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Services</h1>
+        <div id="service">
+            <div class="box">
+                <img src="img/wrap.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">A mobile caterer serves food directly from a vehicle, cart or truck which is designed for the purpose. Mobile catering is common at outdoor events such as concerts, workplaces, and downtown business districts. Mobile catering services service required less maintenance costs when compared with other catering services. Also known as Food truck in some areas.</p>
+            </div>
+        
+            <div class="box">
+                <img src="img/pizza.png" alt="">
+                <h2 class="h-secondary center">Drive Through</h2>
+                <p class="center">In 2017, Arby's realized its production line was no longer working. Its menu had grown complex with the addition of new proteins and having sandwiches done in one station was creating too much crossover and opportunities for error, John Kelly, Arby's chief operating officer, said. It tested a line where everything moves from one line to an expeditor area.</p>
+            </div>
+        
+            <div class="box">
+                <img src="img/foodDelivery.png" alt="">
+                <h2 class="h-secondary center">Home Delivery</h2>
+                <p class="center">Home delivery is one of the hottest trends in the food services industry. Online shopping and delivery services such as Stop & Shop’s Peapod and AmazonFresh, report increasing numbers of customers every quarter. Innovative home meal kit companies like quick bite are taking off. Even fast food chains that never delivered food  are getting into the action.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+    <div id="clients">
+        <div class="client-item">
+            <img src="img/client1.png" alt="">
+        </div>
+        <div class="client-item">
+            <img src="img/client2.png" alt="">
+        </div>
+        <div class="client-item">
+            <img src="img/client3.png" alt="">
+        </div>
+        <!-- <div class="client-item">
+            <img src="img/client4.png" alt="">
+        </div> -->
+    </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+        <form action="backend.php">
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your E-mail Address">
+            </div>
+            <div class="form-group">
+                <label for="number">Contact Number: </label>
+                <input type="phone" name="number" id="number" placeholder="Enter your Contact Number">
+            </div>
+            <div class="form-group">
+                <label for="address">Residential Address: </label>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Residential Address"></textarea>
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+    <footer class="center">Copyright &copy; 2021 | www.QuickBite.c1.biz | All Rights Reserved</footer>
+</body>
+</html>

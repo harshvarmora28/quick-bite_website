@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    margin: 6px 20px;
+}
+.logo img{
+    width: 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.logo img:hover{
+    transform: rotate(-30deg);
+}
+#navbar{
+    display: flex;
+    top: 0px;
+    align-items: center;
+
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+#navbar ul li a:hover{
+    color: rgb(43, 177, 187);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bcg.jpg) no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#home h1:hover{
+    color:rgb(255, 230, 215)
+    
+}
+#home p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.h-primary{
+    font-size: 2.3rem;
+}
+.center{
+    text-align: center;
+}
+#home .btn{
+    background: transparent;
+    border: 2px solid rgb(43, 177, 187);
+    color: rgb(215, 250, 255);
+    border-radius: 20px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+#home .btn:hover{
+    background: rgb(43, 177, 187);
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    box-shadow: 2px 2px 5px black;
+}
+#service{
+    margin: 20px;
+    display: flex;
+}
+.box{
+    border: 2px solid rgb(26, 92, 92);
+    border-radius: 30px;
+    padding: 25px 28px;
+    margin: 14px 24px;
+    background-color: rgb(241, 255, 254);
+    box-shadow: 2px 2px 8px rgb(100, 100, 100);
+
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #fff9f6;
+}
+.box img{
+    display: block;
+    height: 140px;
+    margin: auto;
+}
+.h-secondary{
+    font-size: 1.4rem;
+}
+#services-container{
+    margin-top: 62px;
+}
+#services-container h2{
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+#client-section{
+    position: relative;
+    height: 310px;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background: url(../img/ourClients.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height: 100px;
+}
+.client-item{
+    padding: 30px 45px;
+}
+#client-section h1{
+    margin-bottom: 100px;
+}
+#contact h1{
+    margin-top: 92px;
+}
+#contact{
+    position: relative;
+}
+#contact-box::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contactUs.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0px;
+}
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.1rem;
+    background: rgb(255, 245, 237);
+    border: 1.5px solid rgb(172, 112, 0);
+    border-radius: 24px;
+    text-align: center;
+}
+#contact-box input:hover, textarea:hover{
+    background-color: rgb(242, 255, 254);
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    color: white;
+    font-size: 1rem;
+}
+.submit{
+    display: block;
+    margin: auto;
+}
+#contact h1{
+    margin-bottom: 92px;
+}
+.submit{
+    padding: 9px 36px;
+    margin-top: 30px;
+    background: transparent;
+    border: 2px solid rgb(43, 177, 187);
+    color: rgb(215, 250, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.submit:hover{
+    background: rgb(43, 177, 187);
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    box-shadow: 2px 2px 5px black;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 73px;
+    background-color: rgb(0, 8, 12);
+    color: white;
+    height: 45px;
+}
